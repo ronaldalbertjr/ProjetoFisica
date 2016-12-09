@@ -46,6 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\MiraAsset\Scripts\BombForce.cs" />
+     <Compile Include="Assets\MiraAsset\Scripts\MiraeAtira.cs" />
      <Compile Include="Assets\PlayerMovement.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
  <Reference Include="UnityEngine.UI">

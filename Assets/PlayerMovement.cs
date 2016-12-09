@@ -23,15 +23,6 @@ public class PlayerMovement : MonoBehaviour
         walkAnimAux = (w != 0);
         rb.velocity = new Vector2(w * speed, 0);
         anim.SetBool("Walking", walkAnimAux);
-
-
-        jumpAnimAux = rb.velocity.y;
-        anim.SetFloat("JumpingFloat", jumpAnimAux);
-        if (Input.GetKey(KeyCode.Space))
-        {
-            rb.AddForce(transform.up * 10f);
-            anim.SetBool("Jumping", true);
-        }
         if(isFacingRight && w > 0)
         {
             Flip();
