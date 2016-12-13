@@ -11,11 +11,13 @@ public class PlayerMovement : MonoBehaviour
     bool walkAnimAux;
     Animator anim;
     Rigidbody2D rb;
+
 	void Start ()
     {
         anim = this.GetComponent<Animator>();
         rb = this.GetComponent<Rigidbody2D>();
 	}
+
     void FixedUpdate()
     {
         Debug.Log(rb.velocity.y);
@@ -23,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
         walkAnimAux = (w != 0);
         rb.velocity = new Vector2(w * speed, 0);
         anim.SetBool("Walking", walkAnimAux);
+
         if(isFacingRight && w > 0)
         {
             Flip();
@@ -36,7 +39,6 @@ public class PlayerMovement : MonoBehaviour
     protected void Flip()
     {
         isFacingRight = !isFacingRight;
-
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
