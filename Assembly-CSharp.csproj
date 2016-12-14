@@ -48,7 +48,10 @@
   <ItemGroup>
      <Compile Include="Assets\MiraAsset\Scripts\BombForce.cs" />
      <Compile Include="Assets\MiraAsset\Scripts\MiraeAtira.cs" />
+     <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\CrossPlatformInputInitialize.cs" />
+     <Compile Include="Assets\Scripts\MenuScript.cs" />
+     <Compile Include="Assets\Scripts\PauseScript.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
  <Reference Include="UnityEngine.UI">
