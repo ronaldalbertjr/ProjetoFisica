@@ -3,8 +3,8 @@ using System.Collections;
 
 public class CameraMovement : MonoBehaviour 
 {
-    [SerializeField]
-    GameObject player1;
+    [HideInInspector]
+    public GameObject player1;
     [SerializeField]
     Transform[] camPos;
     [SerializeField]

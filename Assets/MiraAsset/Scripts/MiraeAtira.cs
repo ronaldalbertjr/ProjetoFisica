@@ -63,18 +63,4 @@ public class MiraeAtira : MonoBehaviour {
 
 		transform.localScale = _scale;
 	}
-
-/*	void OnGUI()
-	{
-		DrawQuad (new Rect (50f, 200f, _scale.x * 10f, 10f), Color.red);
-	}
-
-	void DrawQuad(Rect position, Color color) 
-	{
-		Texture2D texture = new Texture2D(1, 1);
-		texture.SetPixel(0,0,color);
-		texture.Apply();
-		GUI.skin.box.normal.background = texture;
-		GUI.Box(position, GUIContent.none);
-	}	*/
 }
