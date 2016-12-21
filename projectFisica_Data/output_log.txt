@@ -1,0 +1,33 @@
+Initialize engine version: 5.0.4f1 (1d75c08f1c9c)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 6450 (ID=0x6779)
+    Vendor:   ATI
+    VRAM:     1011 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\ronald.junior\ProjetoFisica\projectFisica_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\ronald.junior\ProjetoFisica\projectFisica_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\ronald.junior\ProjetoFisica\projectFisica_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\ronald.junior\ProjetoFisica\projectFisica_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\ronald.junior\ProjetoFisica\projectFisica_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\ronald.junior\ProjetoFisica\projectFisica_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.080 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1440x900 60Hz; virtual: 1440x900 at 0,0
+<RI> Initialized touch support.
+Platform assembly: C:\Users\ronald.junior\ProjetoFisica\projectFisica_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\ronald.junior\ProjetoFisica\projectFisica_Data\Managed\System.dll (this message is harmless)
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.643753 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 777.
+Total: 0.230319 ms (FindLiveObjects: 0.029582 ms CreateObjectMapping: 0.025658 ms MarkObjects: 0.160287 ms  DeleteObjects: 0.006640 ms)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.788156 ms
+
+Unloading 162 unused Assets to reduce memory usage. Loaded Objects now: 187.
+Total: 0.271975 ms (FindLiveObjects: 0.022941 ms CreateObjectMapping: 0.022035 ms MarkObjects: 0.121045 ms  DeleteObjects: 0.105047 ms)
+

@@ -15,6 +15,7 @@ public class MiraeAtira : MonoBehaviour {
 	public bool prontoPraAtirar = false;
 	bool irVoltar = false;
 
+
 	void Start () 
 	{
 		player = GameObject.Find (transform.parent.name);
@@ -57,7 +58,15 @@ public class MiraeAtira : MonoBehaviour {
 		{
 			Instantiate(bomba, this.transform.position, this.transform.rotation);
 			GameObject bombaInst = GameObject.Find("Bullet(Clone)");
-			bombaInst.GetComponent<BombForce>().force = 7.5f * _scale.x;
+            if (!player.GetComponent<PlayerMovement>().isFacingRight)
+            {
+                bombaInst.GetComponent<BombForce>().force = 7.5f * _scale.x;
+            }
+            else
+            {
+                bombaInst.GetComponent<BombForce>().force = 7.5f * _scale.x * -1;
+                bombaInst.transform.rotation = Quaternion.Euler(bombaInst.transform.eulerAngles.x, bombaInst.transform.eulerAngles.y * -1, bombaInst.transform.eulerAngles.z);
+            }
 			atirar = false;
 		}	
 

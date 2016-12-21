@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -7,10 +8,13 @@ public class PlayerMovement : MonoBehaviour
     float speed;
     float w;
     float jumpAnimAux;
-    bool isFacingRight;
+    [HideInInspector]
+    public bool isFacingRight;
     bool walkAnimAux;
     Animator anim;
     Rigidbody2D rb;
+    [SerializeField]
+    Image lifebar;
 
 	void Start ()
     {
@@ -20,7 +24,6 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        Debug.Log(rb.velocity.y);
         w = Input.GetAxis("Horizontal");
         walkAnimAux = (w != 0);
         rb.velocity = new Vector2(w * speed, 0);
@@ -34,6 +37,11 @@ public class PlayerMovement : MonoBehaviour
         {
             Flip();
         }
+
+        if(lifebar.fillAmount <= 0)
+        {
+            Destroy(gameObject);
+        }
 	}
 
     protected void Flip()
@@ -42,5 +50,10 @@ public class PlayerMovement : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+    }
+
+    public void LoseLife()
+    {
+        lifebar.fillAmount -= 0.05f;
     }
 }

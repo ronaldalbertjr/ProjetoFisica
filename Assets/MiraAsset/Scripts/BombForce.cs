@@ -19,7 +19,7 @@ public class BombForce : MonoBehaviour {
 			transform.Translate(Vector2.right * force * Time.deltaTime);
 		}
         time += Time.deltaTime;
-        if(time > 2)
+        if(time > 0.5)
         {
             Destroy(gameObject);
         }
@@ -32,7 +32,7 @@ public class BombForce : MonoBehaviour {
 		mira.GetComponent<MiraeAtira> ()._scale = new Vector3 (1f, 1f, 1f);
         if(col.gameObject.tag == "Player")
         {
-            Debug.Log("oi");
+            col.gameObject.GetComponent<PlayerMovement>().LoseLife();
         }
 	}
 
